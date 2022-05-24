@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --font-manrope: 'Manrope', sans-serif;
+    --primary-LightCyan: hsl(193, 38%, 86%);
+    --primary-NeonGreen: hsl(150, 100%, 66%);
+    --neutral-GrayishBlue: hsl(217, 19%, 38%);
+    --neutral-DarkGrayishBlue: hsl(217, 19%, 24%);
+    --neutral-DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    /* background: url(images/mobile-design.jpg) no-repeat top; */
+    /* background: url(images/desktop-design.jpg) no-repeat top; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-manrope);
+    background-color: var(--neutral-DarkBlue);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 120px;
+   
+}
+
+.card-container {
+    width: 343px;
+    height: 100%;
+    background-color:var(--neutral-DarkGrayishBlue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 200px;
+}
+.advice-title {
+    color: var(--primary-NeonGreen);
+    margin-top: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+
+.advice {
+    color: var(--primary-LightCyan);
+    margin-top: 20px;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -1.1px;
+    margin-bottom: 20px;
+}
+
+.separate {
+    padding-bottom: 36px;
+}
+
+.btn-primary {
+    background-color: var(--primary-NeonGreen);
+    position: absolute;
+    padding-top: 4px;
+    margin-top: -8px;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+}
+
+.desktop-hidden {
+    display: none;
+}
+
+
+@media screen and (min-width: 900px ) {
+    
+    .card-container {
+        margin-top: 103px;
+        width: 540px;
+        height: 100%;
+        padding-left: 53px;
+        padding-right: 53px;
+
+}
+    .advice-title {
+  
+        margin-top: 24px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    .advice {
+        margin-top: 25px;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -.4px;
+        margin-bottom: 39px;
+    }
+
+    .separate {
+        margin-left: -4px;
+        padding-bottom: 47px;
+    }
+    
+    .btn-primary {
+        margin-top: -7px;
+    }
+
+    .btn-primary:hover {
+       box-shadow: 0 0 30px 0 var(--primary-NeonGreen);
+    }
+    
+    .desktop-hidden {
+        display: block;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+}
