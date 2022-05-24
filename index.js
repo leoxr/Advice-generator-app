@@ -9,7 +9,7 @@ getAdvice.addEventListener('click', ()=> {
 })
 
 window.onload = () => {
-    // dataApi();
+    dataApi();
 }
 
 function dataApi()  {
